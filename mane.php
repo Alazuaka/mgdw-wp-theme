@@ -1,0 +1,346 @@
+<?php /*
+Template Name: Главная
+*/ ?>
+<div class="container-fluid " style="padding-left: 0; padding-right: 0;">
+    <div id="w10" class="carousel slide" data-interval="5000">
+        <ol class="carousel-indicators">
+            <li class="" data-target="#w10" data-slide-to="0"></li>
+            <li data-target="#w10" data-slide-to="1" class=""></li>
+            <li data-target="#w10" data-slide-to="2" class=""></li>
+            <li data-target="#w10" data-slide-to="3" class="active"></li>
+            <li data-target="#w10" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item">
+                <img src="/images/main/slider/main3.png" class="img-slider center-block hidden-xs">
+                <img src="/images/main/slider/mobile/main3.png" class="img-slider center-block visible-xs">
+
+                <div class="carousel-caption">
+                    <div class="carousel-text">
+                        <h2 class="h2-slider">РУКВА И ШЛАНГИ<br>ВЫСОКОГО ДАВЛЕНИЯ</h2>
+                        <div style="padding:10px;"></div><a href="/rukava-vysokogo-davleniya"
+                            class="btn btn-default btn-more">ПОДРОБНЕЕ<img src="/images/arrow-narrow-right.png"
+                                style="padding-left: 20px; margin-top: -2px;"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/images/main/slider/main1.png" class="img-slider center-block hidden-xs">
+                <img src="/images/main/slider/mobile/main1.png" class="img-slider center-block visible-xs">
+
+                <div class="carousel-caption">
+                    <div class="carousel-text">
+                        <h2 class="h2-slider">РЕМНИ<br>GATES</h2>
+                        <div style="padding:10px;"></div><a href="/gates" class="btn btn-default btn-more">ПОДРОБНЕЕ<img
+                                src="/images/arrow-narrow-right.png" style="padding-left: 20px; margin-top: -2px;"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/images/main/slider/main2.png" class="img-slider center-block hidden-xs">
+                <img src="/images/main/slider/mobile/main2.png" class="img-slider center-block visible-xs">
+
+                <div class="carousel-caption">
+                    <div class="carousel-text">
+                        <h2 class="h2-slider">ОБОРУДОВАНИЕ ДЛЯ<br>ПРОИЗВОДСТВА РВД</h2>
+                        <div style="padding:10px;"></div><a href="/stanki-dla-br-proizvodstva-rvd"
+                            class="btn btn-default btn-more">ПОДРОБНЕЕ<img src="/images/arrow-narrow-right.png"
+                                style="padding-left: 20px; margin-top: -2px;"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item active">
+                <img src="/images/main/slider/main4.png" class="img-slider center-block hidden-xs">
+                <img src="/images/main/slider/mobile/main4.png" class="img-slider center-block visible-xs">
+
+                <div class="carousel-caption">
+                    <div class="carousel-text">
+                        <h2 class="h2-slider">ФИТИНГИ<br>МУФТЫ</h2>
+                        <div style="padding:10px;"></div><a href="/fitingi-i-mufty-2"
+                            class="btn btn-default btn-more">ПОДРОБНЕЕ<img src="/images/arrow-narrow-right.png"
+                                style="padding-left: 20px; margin-top: -2px;"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/images/main/slider/main5.png" class="img-slider center-block hidden-xs">
+                <img src="/images/main/slider/mobile/main5.png" class="img-slider center-block visible-xs">
+
+                <div class="carousel-caption">
+                    <div class="carousel-text">
+                        <h2 class="h2-slider">СИЛОВАЯ<br>ЭЛЕКТРОНИКА</h2>
+                        <div style="padding:10px;"></div><a href="/silovaa-br-elektronika"
+                            class="btn btn-default btn-more">ПОДРОБНЕЕ<img src="/images/arrow-narrow-right.png"
+                                style="padding-left: 20px; margin-top: -2px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#w10" data-slide="prev"><span
+                class="glyphicon glyphicon-chevron-left hidden-xs" aria-hidden="true"></span></a>
+        <a class="right carousel-control" href="#w10" data-slide="next"><span
+                class="glyphicon glyphicon-chevron-right hidden-xs" aria-hidden="true"></span></a>
+    </div>
+</div>
+<div class="container-fluid container-white">
+    <div class="container">
+    </div>
+</div>
+<div class="container-fluid container-gray">
+    <div class="container container-content">
+        <div style="padding: 20px"></div>
+        <div class="site-index">
+            <style>
+                .col-lg-6,
+                .col-lg-4 {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                .grid-container {
+                    padding-right: 0;
+                    background-color: white;
+                    cursor: pointer;
+                }
+
+                .grid-container:hover,
+                .grid-container:hover a,
+                .grid-container:hover p {
+                    color: white !important;
+                    background-color: #F9693C;
+                }
+
+                @media(max-width:767px) {
+                    .grid-container {
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .grid-container a {
+                    text-decoration: none;
+                }
+
+                .grid-image-1 {
+                    float: right;
+                    height: 192px;
+                }
+
+                .grid-image-2 {
+                    float: right;
+                    height: 120px;
+                }
+
+                .grid-image-3 {
+                    float: right;
+                }
+            </style>
+            <h1 class="h1">
+                ГУДВИН - ПОСТАВКА ПРОМЫШЛЕННОГО ОБОРУДОВАНИЯ
+            </h1>
+            <p style="font-size: 20px; font-weight: 400">
+                РВД, ремни, автоэлектрика и промышленное оборудование для Вас
+            </p>
+            <p>&nbsp;</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="col-lg-12 col-xs-12 grid-container"
+                        onclick="window.location.href='/stanki-dla-br-proizvodstva-rvd';">
+                        <h3 class="main-h3"><a href="/stanki-dla-br-proizvodstva-rvd">Оборудование для производства
+                                РВД</a></h3>
+                        <p class="main-p visible-xs">
+                            Полный спектр станков Uniflex для производства рукавов высокого давления. Опрессовочные,
+                            отрезные, окорочные.
+                        </p>
+                        <a href="/stanki-dla-br-proizvodstva-rvd" target="_self">
+                            <img class="img-responsive grid-image-1" alt="Оборудование для производства РВД"
+                                src="/images/main/stanki.png" title="Оборудование для производства РВД">
+                        </a>
+                        <p class="main-p hidden-xs">
+                            Полный спектр станков Uniflex для производства рукавов высокого давления. Опрессовочные,
+                            отрезные, окорочные.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="col-lg-12 col-xs-12 grid-container"
+                        onclick="window.location.href='/rukava-vysokogo-davleniya';">
+                        <h3 class="main-h3"><a href="/rukava-vysokogo-davleniya">Силовая гидравлика для производства
+                                РВД</a></h3>
+                        <a href="/rukava-vysokogo-davleniya">
+                            <img alt="Силовая гидравлика для производства РВД" class="img-responsive grid-image-1"
+                                src="/images/main/rvd.png" title="Силовая гидравлика для производства РВД">
+                        </a>
+                        <p class="main-p">
+                            Оптовая поставка материалов для производства РВД Рукава, фитинги, муфты
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row hidden-xs" style="padding-top: 0;">&nbsp;</div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="col-lg-12 col-xs-12 grid-container"
+                        onclick="window.location.href='/silovaa-br-elektronika';">
+                        <h3 class="main-h3"><a href="/silovaa-br-elektronika">Силовая электроника<br>«ВЕДА МК» (VEDA
+                                MC)</a></h3>
+                        <a href="/silovaa-br-elektronika">
+                            <img alt="Силовая электроника «ВЕДА МК» (VEDA MC)" class="img-responsive grid-image-2"
+                                src="/images/main/veda.png?v1"
+                                title="Преобразователи частоты и активные фильтры Danfoss, Vacon, Comsys"
+                                style="margin-top: 26px;">
+                        </a>
+                        <p style="padding-top: 50px;">
+                            <a href="/silovaa-br-elektronika" style="color: white">→</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="col-lg-12 col-xs-12 grid-container" onclick="window.location.href='/gates';">
+                        <h3 class="main-h3"><a href="/gates" target="_self">Ремни Gates</a><br>&nbsp;</h3>
+                        <a href="/gates" target="_self">
+                            <img alt="Ремни" class="img-responsive grid-image-2" src="/images/main/gates.png"
+                                title="Ремни" style="margin-top: 30px;">
+                        </a>
+                        <p class="main-p hidden-xs">
+                            Зубчатые замкнутые ремни, Зубчатые разомкнутые ремни, Клиновые ремни, Клиновые вариаторные
+                            ремни, Многоклиновые ремни, ...
+                        </p>
+                        <p class="main-p visible-xs">
+                            Зубчатые замкнутые ремни, Зубчатые разомкнутые ремни, Клиновые ремни, ...
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="col-lg-12 col-xs-12 grid-container"
+                        onclick="window.location.href='/fitingi-i-mufty-2';">
+                        <h3 class="main-h3"><a href="/fitingi-i-mufty-2" target="_self">Фитинги и Муфты</a><br>&nbsp;
+                        </h3>
+                        <a href="/fitingi-i-mufty-2" target="_self">
+                            <img alt="Фитинги и Муфты" class="img-responsive grid-image-2" src="/images/main/mufty.png"
+                                title="Фитинги и Муфты" style="margin-top: 30px;">
+                        </a>
+                        <p class="main-p hidden-xs">
+                            Фитинги являются необходимой деталью для РВД в сборе. Надежность и качество фитинга являются
+                            не меньшими гарантами качества, чем сам рукав.
+                        </p>
+                        <p class="main-p visible-xs">
+                            Фитинги являются необходимой деталью для РВД в сборе.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row hidden-xs" style="padding-top: 0;">&nbsp;</div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="col-lg-12 col-xs-12 grid-container"
+                        onclick="window.location.href='https://recyclinggoodwin.ru/';">
+                        <h3 class="main-h3"><a href="https://recyclinggoodwin.ru/" target="_self">Техника Doppstadt</a>
+                        </h3>
+                        <p class="main-p visible-xs">
+                            Высокопроизводительное оборудование для измельчения и сепарации различных материалов. Лучшее
+                            решение для переработки биомассы.
+                        </p>
+                        <a href="https://recyclinggoodwin.ru/" target="_self">
+                            <img alt="Техника Doppstadt" class="img-responsive grid-image-3"
+                                src="/images/main/doppstadt.png" title="Техника Doppstadt">
+                        </a>
+                        <p class="main-p hidden-xs">
+                            Высокопроизводительное оборудование для измельчения и сепарации различных материалов. Лучшее
+                            решение для переработки биомассы.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="col-lg-12 col-xs-12 grid-container"
+                        onclick="window.location.href='https://spezautoelectrika.ru/';">
+                        <h3 class="main-h3"><a href="https://spezautoelectrika.ru/" target="_self">Маяки и
+                                Светотехника</a></h3>
+                        <a href="https://spezautoelectrika.ru/" target="_self">
+                            <img alt="Маяки и Светотехника" class="img-responsive grid-image-3"
+                                src="/images/main/svet.png" title="Маяки и Светотехника">
+                        </a>
+                        <p class="main-p">
+                            Проблесковые маяки и световые балки.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 60px;">&nbsp;</div>
+        </div> <!-------------Social-------------------------->
+        <style>
+            .social {
+                position: fixed;
+                bottom: 50px;
+                right: 45px;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                z-index: 100000;
+            }
+
+            .dropdown-social img,
+            .social-toggle {
+                border-radius: 50%;
+            }
+
+            .dropdown-social,
+            .dropdown-social:hover {
+                width: auto !important;
+                min-width: auto !important;
+                border: none !important;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                background-color: transparent;
+                text-align: center;
+            }
+
+            @media (max-width: 768px) {
+                .social {
+                    bottom: 5px;
+                    right: 5px;
+                }
+            }
+
+            .dropdown-social>li>a {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .dropdown-social>li>a:hover {
+                background-color: transparent;
+            }
+        </style>
+        <script>
+            function setDropDownImage() {
+                $('.social-toggle').attr('src', '/images/social/icon-social-more.jpg');
+            }
+        </script>
+        <div class="dropdown dropup social" id="socialid">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                <img src="/images/social/icon-social-more.jpg" class="social-toggle"
+                    style="display: inline-block; height: 55px;">
+            </a>
+            <ul id="w12" class="dropdown-social dropdown-menu">
+                <li><a href="tel:+78124480810" onclick="setDropDownImage()" tabindex="-1"><img
+                            src="/images/social/ico-phone.jpg" title="" data-toggle="tooltip" data-placement="left"
+                            data-original-title="Телефон"></a></li>
+                <li><a href="mailto:info@mygoodwin.ru" target="_blank" onclick="setDropDownImage()" tabindex="-1"><img
+                            src="/images/social/ico-mail.jpg" title="" data-toggle="tooltip" data-placement="left"
+                            data-original-title="E-Mail"></a></li>
+                <li><a href="https://wa.me/79643700340?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%F0%9F%91%8B%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D0%BE%20%D0%B2%D0%B0%D1%88%D0%B5%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D0%B8%20"
+                        target="_blank" onclick="setDropDownImage()" tabindex="-1"><img
+                            src="/images/social/ico-whatsapp.jpg" title="" data-toggle="tooltip" data-placement="left"
+                            data-original-title="WhatsApp"></a></li>
+                <li><a href="https://t.me/+79643700340" target="_blank" onclick="setDropDownImage()" tabindex="-1"><img
+                            src="/images/social/ico-telegramm.jpg" title="" data-toggle="tooltip" data-placement="left"
+                            data-original-title="Telegramm"></a></li>
+                <li><a href="/contact" onclick="setDropDownImage()" tabindex="-1"><img
+                            src="/images/social/icon-social-more.jpg" title="" data-toggle="tooltip"
+                            data-placement="left" data-original-title="Задать.вопрос"></a></li>
+            </ul>
+        </div>
+        <!-------------End Social---------------------->
+    </div>
+</div>
