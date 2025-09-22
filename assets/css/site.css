@@ -1,3 +1,6 @@
+
+
+
 :root {
   --color-dark: #2a2828;
   --color-dark-2: #333;
@@ -20,8 +23,11 @@ body {
   box-sizing: border-box;
   color: #898989;
   background-color: #e5e5e5;
-  font-family: "Mulish", sans-serif;
+  
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   font-weight: 400;
+  font-size: 14px;
 }
 
 .link {
@@ -86,7 +92,7 @@ body {
 }
 
 .header {
-  font-size: 14px;
+
 }
 .header__top {
   background-color: #fff;
