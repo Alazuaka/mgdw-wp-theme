@@ -2,7 +2,7 @@
   background-color: #201e1e;
   // height: 290px;
   color: #fff;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 50px;
 
   &__container {
@@ -17,7 +17,12 @@
   }
 
   &__logo {
-    width: 160px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  &__logo-img {
+    max-width: 160px;
   }
 
   &__description {
@@ -37,8 +42,7 @@
     padding-right: 60px;
   }
 
-  &__callback {
-  }
+  // &__callback {}
 
   &__btn {
     color: white;
@@ -49,21 +53,19 @@
   }
 
   &__menu {
+    display: flex;
+    flex-direction: column;
     background-color: #2a2828;
     margin: 0 -15px;
     padding: 0 15px;
-  }
-
-  &__menu {
-    background-color: #2a2828;
-    margin: 0 -15px;
-    padding: 0 15px;
+    gap: 40px;
+    padding-bottom: 50px;
   }
 
   &__list {
     display: flex;
     flex-direction: column;
-    padding: 30px 0;
+    padding: 20px 0;
     gap: 10px;
   }
 
@@ -89,59 +91,24 @@
   }
 }
 
-.container {
-}
-
-.row {
-}
-
-.col-lg-6 {
-}
-
-.btn {
-}
-
-.btn-default {
-}
-
-.btn-more {
-}
-
-.contact {
-}
-
-.col-lg-4 {
-}
-
-.list-reset {
-}
-
 @media (min-width: 768px) {
   .footer {
-    padding: 15px;
     max-height: 290px;
-    &__container {
-      max-width: 750px;
-      overflow: hidden;
-    //   padding-right: 15px;
-    //   padding-left: 15px;
-    //   margin-right: auto;
-    //   margin-left: auto;
-    }
+  }
+}
 
+@media (min-width: 1200px) {
+  .footer {
+    max-height: fit-content;
     &__wrap {
+      flex-direction: row;
+      justify-content: space-between;
     }
-
-    &__contact {
-    }
-
-    &__phone {
-    }
-
     &__menu {
-    }
-
-    &__list {
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 0;
+      gap: 100px;
     }
   }
 }
