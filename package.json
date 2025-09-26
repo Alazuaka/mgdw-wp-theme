@@ -1,4 +1,5 @@
 {
+  "name": "mygoodwin-wp-theme",
   "dependencies": {
     "sass": "^1.92.0"
   }

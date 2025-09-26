@@ -12,6 +12,9 @@
   margin-bottom: 10px;
   display: inline-block;
 }
+.footer__logo-img {
+  max-width: 160px;
+}
 .footer__description {
   color: #898989;
   margin-bottom: 48px;

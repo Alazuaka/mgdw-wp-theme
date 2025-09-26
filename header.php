@@ -10,11 +10,12 @@
 </head>
 
 <body <?php body_class(); ?>>
+  <!-- <body> -->
   <header class="header">
     <div class="header__top">
       <div class="container header__top-container">
         <a class="header__logo" href="<?= home_url(); ?>">
-          <?php the_custom_logo(); ?>
+          <img class="header__logo-img logo" src="<?php echo get_theme_mod('logo_header', get_template_directory_uri() . '/assets/img/logo-header.svg'); ?>" alt="<?php bloginfo('name'); ?>">
         </a>
         <div class="header__topbar topbar">
           <ul class="list-reset hidden-xs topbar__about topbar__nav">
@@ -32,7 +33,7 @@
           </ul>
           <a class="topbar__contact">
             <span class="topbar__phone phone-number hidden-xs">+7(812) 448-08-10</span>
-            <img class="topbar__phone-icon hidden-xl" src="/html/phone_Icon.svg">
+            <img class="topbar__phone-icon hidden-xl" src="/html/phone_icon.svg">
           </a>
           <a class="btn topbar__call-back btn-call-me hidden-xs">Перезвоните мне</a>
           <button type="button" class="topbar__toggle toggle hidden-xl">

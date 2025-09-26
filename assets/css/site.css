@@ -272,6 +272,7 @@ p {
   .header__nav-list {
     flex-direction: row;
     color: #333;
+    gap: 0 10px;
   }
   .header__nav-extra-list {
     display: none;
