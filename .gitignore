@@ -1,2 +1,6 @@
 /node_modules
+/assets/css/site.css.map
+/assets/css/site.css
+/assets/css/footer.css.map
+/assets/css/footer.css
 package-lock.json

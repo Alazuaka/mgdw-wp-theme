@@ -4,8 +4,8 @@ add_action('wp_enqueue_scripts', 'mygoodwin_styles'); // подключаем с
 add_action('after_setup_theme', 'add_menus');
 add_action('wp_enqueue_scripts', 'mygoodwin_scripts'); // подключаем стили и скрипты
 add_action('customize_register', 'mygoodwin_customize_register');
-add_action('admin_enqueue_scripts', 'mygoodwin_slide_scripts'); // для карусели
-add_action('save_post', 'mygoodwin_save_slide_meta');
+wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css'); // CSS Bootstrap для стилей (карусель, кнопки).
+wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js', array('jquery'), null, true); // JS Bootstrap для анимации (bundle включает Popper для стрелок). array('jquery') — зависимость от jQuery, WP его грузит. true — в футере, чтоб DOM готов был.
 
 
 
@@ -101,88 +101,10 @@ class Custom_Walker_Nav_Menu extends Walker_Nav_Menu
     }
 }
 
-// CPT для карусели
-function mygoodwin_slider_cpt()
-{
-    register_post_type('slider_slide', [
-        'labels' => ['name' => 'Слайды карусели', 'singular_name' => 'Слайд'],
-        'public' => false,  // Не на фронте, только админка
-        'show_ui' => true,
-        'supports' => ['title'],  // Только заголовок для текста
-        'menu_icon' => 'images-alt2',
-    ]);
-}
-add_action('init', 'mygoodwin_slider_cpt');
-
-// Meta box для слайдов
-function mygoodwin_slide_meta_box()
-{
-    add_meta_box('slide_image_link', 'Изображение и ссылка', 'mygoodwin_slide_callback', 'slider_slide');
-}
-add_action('add_meta_boxes', 'mygoodwin_slide_meta_box');  // Мн.ч., чтоб WP не игнорил
-
-function mygoodwin_slide_callback($post)
-{
-    wp_nonce_field('slide_nonce', 'slide_nonce');
-    $img_id = get_post_meta($post->ID, 'slide_image', true);
-    $link = get_post_meta($post->ID, 'slide_link', true);
-    $img_html = '';
-    if ($img_id) {
-        $img_html = wp_get_attachment_image($img_id, 'large');
-    } else {
-        $img_html = '<p style="color:red;">Нет изображения</p>';
+add_action('wp_footer', 'debug_slider_full');
+function debug_slider_full() {
+    if (is_front_page()) {
+        $slider = get_field('slide', get_the_ID());  // ACF get_field, не get_post_meta
+        echo '<script>console.log("Slider data:", ' . json_encode($slider) . ');</script>';
     }
-    echo '<p><label>Изображение:</label><br>' . $img_html . '<br>' .
-        '<input type="button" class="button" value="Выбрать" id="slide_img_btn"></p>' .
-        '<input type="hidden" name="slide_image" id="slide_image" value="' . esc_attr($img_id) . '">';
-    echo '<p><label>Ссылка:</label><br><input type="url" name="slide_link" value="' . esc_attr($link) . '" style="width:100%;"></p>';
-}
-
-// JS для медиа-аплоадера (в wp_head или enqueue)
-function mygoodwin_slide_scripts($hook)
-{
-    $screen = get_current_screen();  // Правильно берём screen
-    if ($screen->post_type !== 'slider_slide' || ($hook !== 'post.php' && $hook !== 'post-new.php')) return;
-    wp_enqueue_media();
-?>
-    <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function() {
-            const btn = document.getElementById('slide_img_btn');
-            const input = document.getElementById('slide_image');
-            if (btn && input) {
-                btn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const uploader = wp.media({
-                        title: 'Выбери картинку',
-                        button: {
-                            text: 'Вставить'
-                        }
-                    }).on('select', function() {
-                        const attachment = uploader.state().get('selection').first().toJSON();
-                        input.value = attachment.id;
-                        // Удаляем старое превью, если есть
-                        const oldPreview = btn.nextElementSibling;
-                        if (oldPreview && oldPreview.tagName === 'IMG') oldPreview.remove();
-                        // Новое
-                        let preview = document.createElement('img');
-                        preview.src = attachment.url;
-                        preview.style.maxWidth = '200px';
-                        preview.style.display = 'block';
-                        preview.style.marginTop = '10px';
-                        btn.parentNode.insertBefore(preview, btn.nextSibling);
-                    }).open();
-                });
-            }
-        });
-    </script>
-<?php
-}
-
-// Сохранение
-function mygoodwin_save_slide_meta($post_id)
-{
-    if (!wp_verify_nonce($_POST['slide_nonce'], 'slide_nonce')) return;
-    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return;
-    update_post_meta($post_id, 'slide_image', intval($_POST['slide_image']));
-    update_post_meta($post_id, 'slide_link', esc_url_raw($_POST['slide_link']));
 }
