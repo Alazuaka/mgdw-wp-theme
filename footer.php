@@ -1,6 +1,6 @@
  <footer class="footer">
   <div class="container footer__container">
-   <div class="row footer__wrap">
+   <div class="footer__wrap">
     <div class="footer__brand">
      <a href="<?= home_url(); ?>" class="footer__logo">
       <img class="footer__logo-img" src="<?php echo get_theme_mod('logo_footer', get_template_directory_uri() . '/assets/img/logo-footer.svg'); ?>" alt="Логотип Гудвин">
@@ -11,7 +11,7 @@
       <button class="btn footer__callback footer__btn">Перезвоните мне</button>
      </div>
     </div>
-    <div class="col-lg-4 footer__menu">
+    <div class="footer__menu">
      <ul class="footer__list list-reset">
       <li class="footer__item"><a class="footer__link link"
         href="/stanki-dla-br-proizvodstva-rvd">ОБОРУДОВАНИЕ ДЛЯ ПРОИЗВОДСТВА РВД</a></li>
